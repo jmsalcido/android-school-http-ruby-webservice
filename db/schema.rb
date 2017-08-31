@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20170831022934) do
   create_table "mentors", force: :cascade do |t|
     t.string "name"
     t.text "position"
-    t.text "twitter_handle"
+    t.text "email"
     t.text "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
