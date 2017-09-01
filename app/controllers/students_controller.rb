@@ -31,11 +31,11 @@ class StudentsController < ApplicationController
   end
 
   def student_params
-    params.require(:student).permit(:name,:school,:twitter_handle,:email)
+    params.require(:student).permit(:name, :school, :twitter_handle, :email)
   end
 
   def record_not_found
-    render json: {not_found: "student with id: {#{params[:id]}} not found"}
+    render json: {not_found: "student with id: {#{params[:id]}} not found"}, status: 404
   end
 
 end
